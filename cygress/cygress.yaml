@@ -1,0 +1,23 @@
+backend:
+  connectionBufferLimits: 32768
+  http2:
+    initialConnectionWindowSize: 1048576
+    initialStreamWindowSize: 65535
+    maxConcurrentStreams: 100
+  idleTimeout: 180
+  maxRequestHeadersKb: 60
+listener:
+  connectionBufferLimits: 1048576
+  idleTimeout: 10
+cert: |
+    automaticHttps: true
+    renewBeforeDays: 30
+    fallbackForInvalidSecret: true
+    acmeIssuer:
+    - name: letsencrypt
+      email: test@example.com
+    credentialConfig:
+    - tlsIssuer: letsencrypt
+      domains:
+      - foo.com
+      tlsSecret: foo-com-secret

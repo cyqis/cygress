@@ -19,7 +19,7 @@ members = [
     "pingora-ketama",
     "pingora-load-balancing",
     "pingora-memory-cache",
-    "tinyufo",
+    "tinyufo", "cygress",
 ]
 
 [workspace.dependencies]

@@ -6,3 +6,5 @@ dhat-heap.json
 .idea
 .cover
 bleeper.user.toml
+.env
+**/*.log
